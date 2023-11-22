@@ -6,3 +6,16 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+
+//IMPORT SCSS ABSTRACTS
+@import "./abstracts/_functions";
+@import "./abstracts/_mixins";
+@import "./abstracts/_variables";
+
+//IMPORT BASICS
+@import "./basics/_base";
+@import "./basics/_typography";
+@import "./basics/_utilities";
+
+//IMPORT Layout
+@import "./layout/_header";

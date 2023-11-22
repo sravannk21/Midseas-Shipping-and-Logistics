@@ -22174,4 +22174,11 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
 /*# sourceMappingURL=style.css.map */
