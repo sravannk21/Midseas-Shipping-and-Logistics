@@ -22183,7 +22183,7 @@ readers do not read off random characters that represent icons */
 }
 
 .u-padding-Y-80px {
-  padding: 5rem;
+  padding: 5rem auto;
 }
 
 @media only screen and (max-width: 767px) {
