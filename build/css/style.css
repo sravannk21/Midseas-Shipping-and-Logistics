@@ -22182,6 +22182,15 @@ readers do not read off random characters that represent icons */
   color: #2835B8;
 }
 
+.u-padding-Y-80px {
+  padding: 5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .highlights__box1, .highlights__box3 {
+    height: auto !important;
+  }
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/header.jpg);
   background-position: center;
@@ -22191,6 +22200,29 @@ header {
 
 .caption-box {
   height: 88vh;
+}
+
+.highlights__box1 {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pexels-albin-berlin-906982.jpg);
+  height: 25rem;
+}
+.highlights__box3 {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/husb.jpg);
+  height: 25rem;
+}
+.highlights__box2--top {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/crew.jpg);
+}
+.highlights__box2--bottom {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/ship-chand.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */
