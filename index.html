@@ -58,7 +58,8 @@
                     Shipping and Logistics
                 </h1>
                 <p class="text-white fst-normal mt-5">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s
                 </p>
             </div>
         </div>
@@ -72,9 +73,9 @@
                         <div class="d-flex highlights__box1 align-items-end p-5">
                             <div>
                                 <h2 class="text-capitalize text-white text-start">port agency</h2>
-                            <p class="text-white d-none d-xl-block">
-                                It is a long established fact that a reader will be distracted by...
-                            </p>
+                                <p class="text-white d-none d-xl-block">
+                                    It is a long established fact that a reader will be distracted by...
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -83,18 +84,18 @@
                             <div class="h-50 highlights__box2--top p-5">
                                 <div>
                                     <h4 class="text-capitalize text-white text-start">Husbandry Agency </h4>
-                                <p class="text-white d-none d-xl-block">
-                                    It is a long established fact that a reader will be distracted by...
-                                </p>
-                                </div> 
+                                    <p class="text-white d-none d-xl-block">
+                                        It is a long established fact that a reader will be distracted by...
+                                    </p>
+                                </div>
                             </div>
 
                             <div class="h-50 highlights__box2--bottom p-5">
                                 <div>
                                     <h4 class="text-capitalize text-white text-start">Husbandry Agency </h4>
-                                <p class="text-white d-none d-xl-block">
-                                    It is a long established fact that a reader will be distracted by...
-                                </p>
+                                    <p class="text-white d-none d-xl-block">
+                                        It is a long established fact that a reader will be distracted by...
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -103,9 +104,56 @@
                         <div class="d-flex highlights__box3 align-items-end p-5">
                             <div>
                                 <h2 class="text-capitalize text-white text-start">Husbandry Agency </h2>
-                            <p class="text-white d-none d-xl-block">
-                                It is a long established fact that a reader will be distracted by...
-                            </p>
+                                <p class="text-white d-none d-xl-block">
+                                    It is a long established fact that a reader will be distracted by...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--ABOUT-US-->
+        <section class="u-padding-Y-80px">
+            <div class="container">
+                <div class="row flex-sm-row-reverse">
+                    <div class="col-md-4">
+                        <img src="./build/img/about.jpg" class="img-fluid h-100" />
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="text-capitalize display-4 fw-bold text-black mt-4 mt-md-0">
+                            about us
+                        </h2>
+                        <p class="text-muted lh-lg mt-4">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English. Many desktop publishing packages and web page
+                            editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+                            uncover many web sites still in their infancy. Various versions have evolved over the years,
+                            sometimes by accident, sometimes on purpose (injected humour and the like).
+                        </p>
+                        <!--COUNTER-->
+                        <div id="counter">
+                            <div class=" text-start">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <h6 class="display-6 fw-bold counter-value u-primary-color-text"
+                                            data-count="1200">0</h6>
+                                        <p class="text-capitalize fw-semibold mt-1 text-muted">Countries</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h6 class="display-6 fw-bold counter-value u-primary-color-text"
+                                            data-count="20">0</h6>
+                                        <p class="text-capitalize fw-semibold mt-1 text-muted">office</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h6 class="display-6 fw-bold counter-value u-primary-color-text"
+                                            data-count="100">0</h6>
+                                        <p class="text-capitalize fw-semibold mt-1 text-muted">employees</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -114,6 +162,43 @@
         </section>
     </main>
     <script src="./build/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //counter plugin
+            var a = 0;
+            $(window).scroll(function () {
+
+                var oTop = $('#counter').offset().top - window.innerHeight;
+                if (a == 0 && $(window).scrollTop() > oTop) {
+                    $('.counter-value').each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr('data-count');
+                        $({
+                            countNum: $this.text()
+                        }).animate({
+                            countNum: countTo
+                        },
+
+                            {
+
+                                duration: 2000,
+                                easing: 'swing',
+                                step: function () {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum + "+");
+                                }
+
+                            });
+                    });
+                    a = 1;
+                }
+
+            });
+        })
+    </script>
 </body>
 
 </html>
