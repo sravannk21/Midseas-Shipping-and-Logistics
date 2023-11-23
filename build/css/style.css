@@ -22194,6 +22194,10 @@ readers do not read off random characters that represent icons */
   padding-bottom: 5rem;
 }
 
+.u-padding-top-80px {
+  padding-top: 5rem;
+}
+
 .u-bg-gray {
   background-color: #efefef;
 }
