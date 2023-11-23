@@ -22188,6 +22188,14 @@ readers do not read off random characters that represent icons */
   padding-bottom: 5rem;
 }
 
+.u-bg-gray {
+  background-color: #efefef;
+}
+
+.u-bg-dark-gray {
+  background-color: #716E6E;
+}
+
 @media only screen and (max-width: 767px) {
   .highlights__box1, .highlights__box3 {
     height: auto !important;
