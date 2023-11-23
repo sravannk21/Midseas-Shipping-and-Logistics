@@ -22200,6 +22200,10 @@ readers do not read off random characters that represent icons */
   background-color: #716E6E;
 }
 
+.u-bg-footer-dark {
+  background-color: #292929;
+}
+
 @media only screen and (max-width: 767px) {
   .highlights__box1, .highlights__box3 {
     height: auto !important;
