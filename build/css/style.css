@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
