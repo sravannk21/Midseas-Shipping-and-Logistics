@@ -22245,4 +22245,10 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/ship-chand.jpg);
 }
 
+.banner {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/banner.jpg");
+  background-position: center;
+  height: 10rem;
+}
+
 /*# sourceMappingURL=style.css.map */
