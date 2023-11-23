@@ -9,6 +9,7 @@
   "author": "sravanNK",
   "license": "ISC",
   "devDependencies": {
+    "owl.carousel": "^2.3.4",
     "sass": "^1.69.5"
   },
   "dependencies": {
