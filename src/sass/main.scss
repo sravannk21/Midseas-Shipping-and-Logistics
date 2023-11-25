@@ -17,6 +17,9 @@
 @import "./abstracts/_mixins";
 @import "./abstracts/_variables";
 
+//IMPORT COMPONETS
+@import "./components/_service-nav";
+
 //IMPORT BASICS
 @import "./basics/_base";
 @import "./basics/_typography";
