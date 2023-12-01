@@ -22192,6 +22192,10 @@ readers do not read off random characters that represent icons */
   outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .u-primary-color-bg {
   background-color: #2835B8;
 }
@@ -22397,29 +22401,6 @@ header:hover .owl-prev {
 header:hover .owl-next {
   right: 0px;
   opacity: 1;
-}
-
-.highlights__box1 {
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pexels-albin-berlin-906982.jpg);
-  height: 25rem;
-}
-.highlights__box3 {
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/husb.jpg);
-  height: 25rem;
-}
-.highlights__box2--top {
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/crew.jpg);
-}
-.highlights__box2--bottom {
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/ship-chand.jpg);
 }
 
 .banner {
