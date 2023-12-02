@@ -1,0 +1,12 @@
+.heading-tooltip {
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: -5%;
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: #8d98ed;
+    }
+}
