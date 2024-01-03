@@ -22196,6 +22196,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  font-size: 18px;
+}
+
 .u-primary-color-bg {
   background-color: #2835B8;
 }
